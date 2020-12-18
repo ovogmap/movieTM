@@ -50,11 +50,7 @@
       "last 1 safari version"
     ]
   },
-<<<<<<< HEAD
-  "homepage": "https://ovogmap.github.io"
-=======
   "devDependencies": {
     "@babel/core": "^7.12.10"
   }
->>>>>>> 302766f675189392373c79ec676bd0de9e595737
 }

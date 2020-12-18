@@ -13,6 +13,7 @@ const listener = () => {
   console.log(state);
 };
 const unsubscribe = store.subscribe(listener);
+unsubscribe();
 
 ReactDOM.render(
   <Provider store={store}>

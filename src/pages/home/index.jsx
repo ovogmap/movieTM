@@ -52,9 +52,7 @@ const Home = () => {
               <Text title={result}>{result?.title}</Text>
               <Text>{result.tagline || "오늘의 추천영화"}</Text>
               <Join>
-                <Link to={`/detail/${result?.id}`}>
-                  <a>보러가기</a>
-                </Link>
+                <Link to={`/detail/${result?.id}`}>보러가기</Link>
                 <TrendingFlatIcon />
               </Join>
             </TextBox>

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
 
 import ListItem from "../../components/List";
 import ErrorPage from "../404";

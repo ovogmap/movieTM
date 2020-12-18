@@ -18,7 +18,7 @@ const ListItem = ({ itemList, title }) => {
         {itemList.map((item) => {
           const { title, id, backdrop_path } = item;
           return (
-            <MovieItems>
+            <MovieItems key={id}>
               <Link to={`/detail/${id}`}>
                 <ItemImg
                   src={`https://image.tmdb.org/t/p/original/${backdrop_path}`}

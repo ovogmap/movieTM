@@ -33,15 +33,13 @@ const Like = () => {
               return (
                 <ItemBox key={item.id}>
                   <Link to={`/detail/${item.id}`}>
-                    <a>
-                      <img
-                        src={`${item.poster_path}`}
-                        alt=""
-                        width="200px"
-                        height="300px"
-                      />
-                      <p>{item.title}</p>
-                    </a>
+                    <img
+                      src={`${item.poster_path}`}
+                      alt=""
+                      width="200px"
+                      height="300px"
+                    />
+                    <p>{item.title}</p>
                   </Link>
                   <RemoveBtn data-id={item.id} onClick={onDelete}>
                     좋아요 취소

@@ -17,33 +17,23 @@ const Navbal = ({ isColor }) => {
       <UL>
         <LI>
           <Link to="/">
-            <h1>
-              <a>HOME</a>
-            </h1>
+            <h1>HOME</h1>
           </Link>
         </LI>
         {onModea ? (
           <LI>
             <SubUL>
               <li>
-                <Link to="/list">
-                  <a>영화리스트</a>
-                </Link>
+                <Link to="/list">영화리스트</Link>
               </li>
               <li>
-                <Link to="/like">
-                  <a>좋아요리스트</a>
-                </Link>
+                <Link to="/like">좋아요리스트</Link>
               </li>
               <li>
-                <Link to="/search">
-                  <a>검색</a>
-                </Link>
+                <Link to="/search">검색</Link>
               </li>
               <li>
-                <Link to="/about">
-                  <a>소개</a>
-                </Link>
+                <Link to="/about">소개</Link>
               </li>
             </SubUL>
           </LI>
@@ -75,24 +65,16 @@ const Navbal = ({ isColor }) => {
         >
           <ul>
             <li>
-              <Link to="/list">
-                <a>영화리스트</a>
-              </Link>
+              <Link to="/list">영화리스트</Link>
             </li>
             <li>
-              <Link to="/like">
-                <a>좋아요리스트</a>
-              </Link>
+              <Link to="/like">좋아요리스트</Link>
             </li>
             <li>
-              <Link to="/search">
-                <a>검색</a>
-              </Link>
+              <Link to="/search">검색</Link>
             </li>
             <li>
-              <Link to="/about">
-                <a>소개</a>
-              </Link>
+              <Link to="/about">소개</Link>
             </li>
           </ul>
         </Navbox>

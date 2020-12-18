@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
 
 import { Intro, Casts, Videos, Similar } from "../../components/Detail";
 import ErrorPage from "../404";
@@ -11,8 +9,7 @@ import Spinner from "../../components/Spinner";
 
 import theme from "../../styles/media";
 import detailApi from "../../common/api/detail";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+
 import { useDispatch, useSelector } from "react-redux";
 import { onLoading, getData, onError } from "../../common/modules/detail";
 
