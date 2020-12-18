@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+
 export default function Error404({ fetchData }) {
   return (
     <Container>
@@ -72,15 +72,4 @@ const Text = styled.p`
   font-weight: 200;
   font-size: 15px;
   line-height: 1.5;
-`;
-const Btn = styled.button`
-  padding: 18px 40px;
-  background: #16447c;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 50px;
-  font-family: "Noto Sans KR";
-  cursor: pointer;
 `;

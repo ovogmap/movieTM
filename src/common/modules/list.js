@@ -13,6 +13,7 @@ const INITIAL_STATE = {
     upcoming: [],
     popular: [],
     topRateds: [],
+    nowplaying: [],
   },
 };
 
@@ -20,8 +21,8 @@ export default function home(state = INITIAL_STATE, action) {
   switch (action.type) {
     case LOADING:
       return {
+        ...state,
         loading: true,
-        data: null,
         error: null,
       };
     case SUCCESS:
@@ -31,6 +32,7 @@ export default function home(state = INITIAL_STATE, action) {
           upcoming: action.data.upcoming,
           popular: action.data.popular,
           topRateds: action.data.topRateds,
+          nowplaying: action.data.nowplaying,
         },
         error: null,
       };

@@ -17,7 +17,9 @@ const Footer = () => {
 };
 export default Footer;
 
-const Box = styled.footer``;
+const Box = styled.footer`
+  /* margin-top: 100px; */
+`;
 
 const Title = styled.p`
   margin-left: 10px;

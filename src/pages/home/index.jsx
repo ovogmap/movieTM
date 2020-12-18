@@ -17,10 +17,11 @@ import { onLoading, getData, onError } from "../../common/modules/home";
 const Home = () => {
   const { loading, erorr, result } = useSelector((store) => store.Home);
   const dispatch = useDispatch();
-  console.log("result", result);
+
   const onMedia = useMediaQuery({
     query: theme.tablet,
   });
+
   const fetchData = async () => {
     dispatch(onLoading());
     try {
@@ -30,6 +31,7 @@ const Home = () => {
       dispatch(onError(e));
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -41,7 +43,11 @@ const Home = () => {
       <Layout isMobile={false}>
         <Container>
           <ImgBox URL={result?.backdropPath}>
-            {!onMedia && <Poster src={`${result?.poster_path}`} />}
+            {!onMedia && (
+              <Link to={`/detail/${result?.id}`}>
+                <Poster src={`${result?.poster_path}`} />
+              </Link>
+            )}
             <TextBox>
               <Text title={result}>{result?.title}</Text>
               <Text>{result.tagline || "오늘의 추천영화"}</Text>
@@ -109,10 +115,8 @@ const Text = styled.p`
 `;
 
 const ImgBox = styled.div`
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: #eee;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,15 +141,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
-  @media ${(props) => props.theme.mobile} {
-  }
-  @media ${(props) => props.theme.tablet} {
-  }
-  @media ${(props) => props.theme.desktop} {
-  }
+  height: 100%;
 `;
