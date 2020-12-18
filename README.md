@@ -1,3 +1,9 @@
+## 긴급
+
+<br>
+
+>  아이폰 flexbox 이슈 대응중에 있습니다. <br>아이폰으로 접속시 flex박스 깨짐현상이 있습니다.
+
 # Movie App with TMDB open API & React
 
 ## 소개글
