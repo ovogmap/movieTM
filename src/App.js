@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/globals.css";
-import Routes from "./components/Routes";
+import AppRouter from "./components/Routes";
 function App() {
-  return <Routes />;
+  return <AppRouter />;
 }
 
 export default App;

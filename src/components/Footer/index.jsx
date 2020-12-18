@@ -6,7 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const Footer = () => {
   return (
     <Box>
-      <a href="https://github.com/ovogmap/theMovie" target="_blank">
+      <a href="https://github.com/ovogmap/movieTM" target="_blank">
         <Container>
           <GitHubIcon />
           <Title>Copyright © 2020 All rights ovogmap.</Title>

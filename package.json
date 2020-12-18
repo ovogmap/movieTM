@@ -1,5 +1,5 @@
 {
-  
+  "homepage": "https://ovogmap.github.io/movieTM",
   "name": "movie-app",
   "version": "0.1.0",
   "private": true,
@@ -50,5 +50,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ovogmap.github.io/movieTM"
+  "devDependencies": {
+    "@babel/core": "^7.12.10"
+  }
 }
