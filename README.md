@@ -1,10 +1,16 @@
+
+# Movie App with TMDB open API & React
+
+<br>
+
 ## 긴급
 
 <br>
 
 >  아이폰 flexbox 이슈 대응중에 있습니다. <br>아이폰으로 접속시 flex박스 깨짐현상이 있습니다.
 
-# Movie App with TMDB open API & React
+<br>
+<br>
 
 ## 소개글
 
@@ -13,8 +19,8 @@
 > TMDB에서 제공하는 open API와 React를 사용해 제작한 영화 소개및 검색 웹앱입니다. 반응형으로 구현하였고 상태관리는 Redux를 사용하였습니다, 좋아요 리스트는 로컬스토리지를 사용해 구현하였습니다.
 
 <br>
+<br>
 
----
 
 ## 제작기간
 
@@ -23,8 +29,8 @@
 > 2020.12.11 ~ 2020.12.19 <br>참여인원 1명
 
 <br>
+<br>
 
----
 
 ## 사용한 기술스택
 
@@ -33,8 +39,8 @@
 > redux를 사용한 상태관리 <br> styled-components기반 Css-in-Js 스타일링 <br> TMDB 오픈API를 사용한 데이터및 요청관리 <br> React-router-dom을 사용한 라우팅
 
 <br>
+<br>
 
----
 
 ## 페이지별 기능
 
@@ -42,6 +48,7 @@
 
 > 총 5개의 페이지로 제작되었습니다.
 
+<br>
 <br>
 
 ### 메인페이지
@@ -76,6 +83,7 @@ return randomMivie;
 랜덤 선정된 영화의 id값을 사용해 detail api를 요청합니다. response에서 필요한 값만 객체로 만들어
 리턴하여 메인페이지에서 사용합니다.
 
+<br>
 <br>
 
 ### 디테일페이지
@@ -146,6 +154,7 @@ const onLikeToggle = () => {
 ```
 
 <br>
+<br>
 
 ### 영화리스트
 
@@ -174,6 +183,7 @@ export default async function listApi() {
 
 동일한 작업을하는 함수를 작성하고 파라미터의 값으로 Api path값을 넣어줘 각각의 데이터를 요청하고 리스폰스를 받을 수 있었습니다. 마찬가지로 하나의 객체로 가공하여 `return`하도록 하였습니다.
 
+<br>
 <br>
 
 ### 좋아요리스트 페이지
@@ -209,6 +219,7 @@ const onDelete = (e) => {
 
 로컬스토리지의 값을 빈배열에 push해줘 반환하도록 하고 반환된 배열을 state에 담아주었습니다.
 
+<br>
 <br>
 
 ### 검색페이지
